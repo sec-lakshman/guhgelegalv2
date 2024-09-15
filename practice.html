@@ -9,7 +9,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta name="viewport" content="initial-scale=1, maximum-scale=1">
       <!-- site metas -->
-      <title>what We Do</title>
+      <title>Practice Areas</title>
       <meta name="keywords" content="">
       <meta name="description" content="">
       <meta name="author" content="">
@@ -27,12 +27,63 @@
       <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
       <!-- Tweaks for older IEs-->
       <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+      <!-- Custom CSS for Dropdown -->
+      <style>
+         /* Style the dropdown button */
+         .dropbtn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+         }
+
+         /* Dropdown container */
+         .dropdown {
+            position: relative;
+            display: inline-block;
+         }
+
+         /* Dropdown content (hidden by default) */
+         .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+         }
+
+         /* Links inside the dropdown */
+         .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+         }
+
+         /* Show the dropdown on hover */
+         .dropdown:hover .dropdown-content {
+            display: block;
+         }
+
+         /* Change color of dropdown links on hover */
+         .dropdown-content a:hover {
+            background-color: #f1f1f1;
+         }
+
+         /* Change the background color of the dropdown button when the dropdown is shown */
+         .dropdown:hover .dropbtn {
+            background-color: #3e8e41;
+         }
+      </style>
    </head>
    <body>
       <div class="header_section">
          <div class="container-fluid">
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
-               <a class="navbar-brand"href="index.html"><img src="images/logo.png"></a>
+               <a class="navbar-brand" href="index.html"><img src="images/logo.png"></a>
                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                <span class="navbar-toggler-icon"></span>
                </button>
@@ -44,8 +95,18 @@
                      <li class="nav-item">
                         <a class="nav-link" href="about.html">About</a>
                      </li>
-                     <li class="nav-item active">
-                        <a class="nav-link" href="what-we.html">What we do</a>
+                     <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                           Practice Areas
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                           <a class="dropdown-item" href="notary-services.html">Notary Services</a>
+                           <a class="dropdown-item" href="immigration-services.html">Immigration Services</a>
+                           <a class="dropdown-item" href="ltb-ontario.html">LTB - Ontario</a>
+                           <a class="dropdown-item" href="indian-visa-services.html">Indian Visa Services</a>
+                           <a class="dropdown-item" href="employment-law.html">Employment Law</a>
+                           <a class="dropdown-item" href="administrative-law.html">Administrative Law</a>
+                        </div>
                      </li>
                      <li class="nav-item">
                         <a class="nav-link" href="blog.html">Blog</a>
@@ -54,25 +115,17 @@
                         <a class="nav-link" href="contact.html">Contact Us</a>
                      </li>
                   </ul>
-                  <form class="form-inline my-2 my-lg-0">
-                     <div class="login_bt">
-                        <ul>
-                           <li><a href="#"><span class="user_icon"><i class="fa fa-user" aria-hidden="true"></i></span>Login</a></li>
-                           <li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
-                        </ul>
-                     </div>
-                  </form>
                </div>
             </nav>
          </div>
       </div>
       <!-- header section end -->
       <!-- services section start -->
-      <div class="services_section margin_top90">
+      <div class="services_section">
          <div class="container">
             <div class="row">
                <div class="col-sm-12">
-                  <h1 class="studies_taital">SERVICE OFFERINGS</h1>
+                  <h1 class="studies_taital">OUR AREA OF PRACTICE</h1>
                </div>
             </div>
          </div>
@@ -88,9 +141,9 @@
                                     <img src="images/icon-1.png" class="image_1">
                                     <img src="images/icon-4.png" class="image_2">
                                  </div>
-                                 <h3 class="corporate_text">Corporate Law</h3>
-                                 <p class="chunks_text">chunks as necessary, making this the first true generator on the Internet. It uses a dictionary </p>
-                                 <div class="readmore_button"><a href="#">Read More</a></div>
+                                 <h3 class="corporate_text">Notary Services</h3>
+                                 <p class="chunks_text">Documents are notarized as per the guidelines of Ministry of Attorney General of Ontario </p>
+                                 <div class="readmore_button"><a href="notary-services.html">Read More</a></div>
                               </div>
                            </div>
                            <div class="col-md-4">
@@ -98,10 +151,10 @@
                                  <div class="house_icon">
                                     <img src="images/icon-5.png" class="image_1">
                                     <img src="images/icon-5.png" class="image_2">
-                                 </div>
-                                 <h3 class="corporate_text">Employments Law</h3>
-                                 <p class="chunks_text">chunks as necessary, making this the first true generator on the Internet. It uses a dictionary </p>
-                                 <div class="readmore_button active"><a href="#">Read More</a></div>
+                                 </div>           
+                                 <h3 class="corporate_text">Immigration Services</h3>
+                                 <p class="chunks_text">We provide expert guidance on visa applications, residency permits, and citizenship processes </p>
+                                 <div class="readmore_button active"><a href="immigration-services.html">Read More</a></div>
                               </div>
                            </div>
                            <div class="col-md-4">
@@ -110,9 +163,9 @@
                                     <img src="images/icon-3.png" class="image_1">
                                     <img src="images/icon-6.png" class="image_2">
                                  </div>
-                                 <h3 class="corporate_text">International Law</h3>
-                                 <p class="chunks_text">chunks as necessary, making this the first true generator on the Internet. It uses a dictionary </p>
-                                 <div class="readmore_button"><a href="#">Read More</a></div>
+                                 <h3 class="corporate_text">LTB - Ontario</h3>
+                                 <p class="chunks_text">We provide effective representation to the landlords and tenants at the LTB of Ontario </p>
+                                 <div class="readmore_button"><a href="ltb-ontario.html">Read More</a></div>
                               </div>
                            </div>
                         </div>
@@ -127,9 +180,9 @@
                                     <img src="images/icon-1.png" class="image_1">
                                     <img src="images/icon-4.png" class="image_2">
                                  </div>
-                                 <h3 class="corporate_text">Corporate Law</h3>
-                                 <p class="chunks_text">chunks as necessary, making this the first true generator on the Internet. It uses a dictionary </p>
-                                 <div class="readmore_button"><a href="#">Read More</a></div>
+                                 <h3 class="corporate_text">Indian Visa Services</h3>
+                                 <p class="chunks_text">We assist applicants on their Surrender of Passport, Indian Visa and OCI applications </p>
+                                 <div class="readmore_button"><a href="indian-visa-services.html">Read More</a></div>
                               </div>
                            </div>
                            <div class="col-md-4">
@@ -139,8 +192,8 @@
                                     <img src="images/icon-5.png" class="image_2">
                                  </div>
                                  <h3 class="corporate_text">Employments Law</h3>
-                                 <p class="chunks_text">chunks as necessary, making this the first true generator on the Internet. It uses a dictionary </p>
-                                 <div class="readmore_button active"><a href="#">Read More</a></div>
+                                 <p class="chunks_text">For workplace rights, employment contracts, and disputes between employers and employees </p>
+                                 <div class="readmore_button active"><a href="employment-law.html">Read More</a></div>
                               </div>
                            </div>
                            <div class="col-md-4">
@@ -149,48 +202,9 @@
                                     <img src="images/icon-3.png" class="image_1">
                                     <img src="images/icon-6.png" class="image_2">
                                  </div>
-                                 <h3 class="corporate_text">International Law</h3>
-                                 <p class="chunks_text">chunks as necessary, making this the first true generator on the Internet. It uses a dictionary </p>
-                                 <div class="readmore_button"><a href="#">Read More</a></div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="carousel-item">
-                     <div class="container">
-                        <div class="row">
-                           <div class="col-md-4">
-                              <div class="service_box">
-                                 <div class="house_icon">
-                                    <img src="images/icon-1.png" class="image_1">
-                                    <img src="images/icon-4.png" class="image_2">
-                                 </div>
-                                 <h3 class="corporate_text">Corporate Law</h3>
-                                 <p class="chunks_text">chunks as necessary, making this the first true generator on the Internet. It uses a dictionary </p>
-                                 <div class="readmore_button"><a href="#">Read More</a></div>
-                              </div>
-                           </div>
-                           <div class="col-md-4">
-                              <div class="service_box active">
-                                 <div class="house_icon">
-                                    <img src="images/icon-5.png" class="image_1">
-                                    <img src="images/icon-5.png" class="image_2">
-                                 </div>
-                                 <h3 class="corporate_text">Employments Law</h3>
-                                 <p class="chunks_text">chunks as necessary, making this the first true generator on the Internet. It uses a dictionary </p>
-                                 <div class="readmore_button active"><a href="#">Read More</a></div>
-                              </div>
-                           </div>
-                           <div class="col-md-4">
-                              <div class="service_box">
-                                 <div class="house_icon">
-                                    <img src="images/icon-3.png" class="image_1">
-                                    <img src="images/icon-6.png" class="image_2">
-                                 </div>
-                                 <h3 class="corporate_text">International Law</h3>
-                                 <p class="chunks_text">chunks as necessary, making this the first true generator on the Internet. It uses a dictionary </p>
-                                 <div class="readmore_button"><a href="#">Read More</a></div>
+                                 <h3 class="corporate_text">Administrative Law</h3>
+                                 <p class="chunks_text">We represent clients on their application with government agencies and boards </p>
+                                 <div class="readmore_button"><a href="administrative-law.html">Read More</a></div>
                               </div>
                            </div>
                         </div>
@@ -198,56 +212,54 @@
                   </div>
                </div>
                <a class="carousel-control-prev" href="#main_slider" role="button" data-slide="prev">
-                 <i class="fa fa-arrow-left"></i>
+               <i class="fa fa-arrow-left"></i>
                </a>
                <a class="carousel-control-next" href="#main_slider" role="button" data-slide="next">
-                 <i class="fa fa-arrow-right"></i>
+               <i class="fa fa-arrow-right"></i>
                </a>
-             </div>
+            </div>
          </div>
       </div>
       <!-- services section end -->
-       <!-- footer section start -->
-       <div class="footer_section layout_padding">
+      <!-- footer section start -->
+      <div class="footer_section layout_padding">
          <div class="container">
-             <div class="row">
-                 <div class="col-md-12">
-                     <div class="location_text">
-                         <ul>
-                             <li>
-                                 <a href="https://maps.app.goo.gl/mSViADcu8NZgCgoSA" target="_blank">
-                                     <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                 </a>
-                             </li>
-                             <li>
-                                 <a href="tel:+1416-816-9249">
-                                     <i class="fa fa-phone" aria-hidden="true"></i>
-                                 </a>
-                             </li>
-                             <li>
-                                 <a href="mailto:info@ghugelegal.com">
-                                     <i class="fa fa-envelope" aria-hidden="true"></i>
-                                 </a>
-                             </li>
-                         </ul>
-                     </div>
-                 </div>
-                 <div class="footer_logo">
-                     <a href="indexz.html">
-                         <img src="images/logo.png" alt="Logo">
-                     </a>
-                 </div>
-                 <div class="social_icon">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="location_text">
                      <ul>
-                         <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                         <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                         <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                        <li>
+                           <a href="https://maps.app.goo.gl/mSViADcu8NZgCgoSA" target="_blank">
+                              <i class="fa fa-map-marker" aria-hidden="true"></i>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="tel:+1416-816-9249">
+                              <i class="fa fa-phone" aria-hidden="true"></i>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="mailto:info@ghugelegal.com">
+                              <i class="fa fa-envelope" aria-hidden="true"></i>
+                           </a>
+                        </li>
                      </ul>
-                 </div>
-             </div>
+                  </div>
+               </div>
+               <div class="footer_logo">
+                  <a href="indexz.html">
+                     <img src="images/logo.png" alt="Logo">
+                  </a>
+               </div>
+               <div class="social_icon">
+                  <ul>
+                     <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                     <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                     <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                  </ul>
+               </div>
+            </div>
          </div>
-     </div>
-     
       </div>
       <!-- footer section end -->
       <!-- copyright section start -->
